@@ -57,25 +57,25 @@ button {
 }
 
 .burger-menu{
-    background-image: url("/svg/burger.svg");
+    background-image: url("/1_3/svg/burger.svg");
 }
 .contacts__phone-btn{
-    background-image: url("/svg/call.svg");
+    background-image: url("/1_3/svg/call.svg");
 }
 
 .contacts__chat-btn{
-    background-image: url("/svg/chat.svg");
+    background-image: url("/1_3/svg/chat.svg");
 }
 
 .contacts__profile-btn{
-    background-image: url("/svg/profile.svg");
+    background-image: url("/1_3/svg/profile.svg");
 }
 .order__repair-btn{
-    background-image: url("/svg/repair.svg");
+    background-image: url("/1_3/svg/repair.svg");
 }
 
 .order__checkstatus-btn{
-    background-image: url("/svg/checkstatus.svg");
+    background-image: url("/1_3/svg/checkstatus.svg");
 }
 
 .contacts{
@@ -100,7 +100,7 @@ button {
         margin: 0;
         font-size: 28px;
         font-family: 'TT Lakes Bold';
-        background-image: url(/svg/highlight.svg);
+        background-image: url(/1_3/svg/highlight.svg);
         background-repeat:no-repeat;
 
     }
@@ -138,7 +138,7 @@ button {
     }
 
     .read-more-btn{
-        background-image: url(/svg/more.svg);
+        background-image: url(/1_3/svg/more.svg);
         background-repeat:no-repeat;
         background-position:left;
     }
