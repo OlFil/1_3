@@ -1,0 +1,481 @@
+@font-face {
+    font-family: 'TT Lakes Regular';
+    src: url('../fonts/TTLakes-Regular.eot');
+    src: url('../fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTLakes-Regular.woff') format('woff'),
+    url('../fonts/TTLakes-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TT Lakes Medium';
+    src: url('../fonts/TTLakes-Medium.eot');
+    src: url('../fonts/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTLakes-Medium.woff') format('woff'),
+    url('../fonts/TTLakes-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TT Lakes Bold';
+    src: url('../fonts/TTLakes-Bold.eot');
+    src: url('../fonts/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTLakes-Bold.woff') format('woff'),
+    url('../fonts/TTLakes-Bold.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+body{
+    margin: 0;
+    font-family: 'TT Lakes Regular',"Arial", sans-serif;
+    font-size: 14px;
+
+}
+
+header{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 88px;
+}
+
+button {
+    border: 0;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+
+.header__buttons{
+    display: flex;
+}
+
+.header__left-col{
+    display: flex;
+}
+
+.burger-menu{
+    background-image: url("/svg/burger.svg");
+}
+.contacts__phone-btn{
+    background-image: url("/svg/call.svg");
+}
+
+.contacts__chat-btn{
+    background-image: url("/svg/chat.svg");
+}
+
+.contacts__profile-btn{
+    background-image: url("/svg/profile.svg");
+}
+.order__repair-btn{
+    background-image: url("/svg/repair.svg");
+}
+
+.order__checkstatus-btn{
+    background-image: url("/svg/checkstatus.svg");
+}
+
+.contacts{
+    display: flex;
+    gap: 16px;
+}
+
+.order{
+    display: flex;
+    gap: 16px;
+}
+
+  .divider{
+        width: 2px;
+        height: 32px;
+        background: #EAEAEA;
+        border-radius: 2px;
+        align-self: center;
+    }
+
+    .title{
+        margin: 0;
+        font-size: 28px;
+        font-family: 'TT Lakes Bold';
+        background-image: url(/svg/highlight.svg);
+        background-repeat:no-repeat;
+
+    }
+
+    .menu-services{
+
+        display: flex;
+        align-items:center;
+        list-style:none;
+        margin: 0;
+        padding: 0;
+        gap:16px;
+        width: 100%;
+    }
+
+    .menu-services__link{
+        text-decoration: none;
+        color: #7E7E82;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 10px 10px 10px 10px;
+        font-family: "TT Lakes Medium","Arial", sans-serif;
+    }
+
+    .menu-services__item{
+         white-space:nowrap;
+         padding: 8px;
+    }
+
+    .menu-services__item:active, .menu-services__item:hover {
+        background-color:#FFFFFF;
+        border: 2px solid #B8FFEC;
+        border-radius: 6px;
+        
+    }
+
+    .read-more-btn{
+        background-image: url(/svg/more.svg);
+        background-repeat:no-repeat;
+        background-position:left;
+    }
+
+    .content{
+        display: flex;
+        
+    }
+
+@media (min-width: 20px) and (max-width: 767px){
+
+    .header{
+        display: flex;
+        gap: 16px;
+        background-color:#FFFFFF;
+        justify-content: space-between;
+        border-bottom: 1px solid #D9FFF5;
+
+    }
+
+    .header__burger-menu{
+       margin-left: 16px;
+       margin-right: 16px;
+    }
+
+    .header__divider{
+        display: none;
+    }
+
+    .header__contacts{
+        display: none;
+    }
+
+    .header__buttons{
+        margin-right: 16px;
+        
+    }
+    .header__order{
+        justify-self: end;
+        margin-left: auto;
+        
+    }
+
+    .header__order::before{
+        content:"";
+        width: 2px;
+        height: 32px;
+        background: #EAEAEA;
+        border-radius: 1px;
+        align-self: center;
+        margin-right: 4px;
+    }
+
+
+    main{
+        padding-top: 24px;
+        background-color:#F8F8F8;
+
+    }
+
+    .menu-services{
+        overflow: scroll;
+    }
+
+    .main__title{
+        padding-left: 16px;
+        margin-bottom: 24px;
+    }
+
+    .main__menu-services{
+        margin-left: 16px;
+    }
+
+    .menu-services__item{
+        line-height: 18px;
+    }
+
+    .content{
+        flex-direction: column;
+    }
+
+    .content__text{
+        margin: 16px;
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .content__p--hidden{
+        
+        display: none;
+    }
+
+     .content__read-more-btn{
+        font-size: 16px;
+        margin-left: 3%;
+        padding: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .order__checkstatus-btn{
+          font-size: 0;
+      }
+
+      .order__repair-btn{
+          font-size: 0;
+      }
+    
+}
+
+
+@media (min-width: 768px) and (max-width: 1119px){
+
+    .header{
+        display: flex;
+        background-color:#FFFFFF;
+        justify-content: space-between;
+        border-bottom: 1px solid #D9FFF5;
+
+    }
+    .header__burger-menu{
+       margin-left: 24px;
+
+    }
+
+    .header__contacts{
+
+       margin-right: 20px;
+        
+    }
+    .header__order{
+        margin-right: 40px;
+    }
+
+      .order__checkstatus-btn{
+          font-size: 0;
+      }
+
+      .order__repair-btn{
+          font-size: 0;
+      }
+    .header__logo{
+        margin-left: 20px;
+    }
+
+    .header__order::before{
+        content:"";
+        width: 2px;
+        height: 32px;
+        background: #EAEAEA;
+        border-radius: 1px;
+        align-self: center;
+    }
+
+    .header__left-col{
+        display: flex;
+
+    }
+
+    .header__divider{
+        margin-left: 20px;
+    }
+    
+    
+
+
+    main{
+        padding-top: 24px;
+        background-color:#F8F8F8;
+        padding-bottom: 100%;
+
+    }
+
+    .menu-services{
+        overflow: scroll;
+    }
+
+    .main__title{
+        padding-left: 24px;
+        margin-bottom: 24px;
+    }
+
+    .main__menu-services{
+        margin-left: 24px;
+
+    }
+
+    .content{
+        justify-content: space-between;
+        margin: 24px;
+        
+    }
+    .content__p{
+        margin-block-start: 0;
+    }    
+
+    .content__text{
+        font-size: 14px;
+        line-height: 20px;
+        max-width:43% ;
+        
+    }
+
+    .content__p--hidden{
+        max-height: 40px;
+        overflow: hidden;
+    }
+
+    .content__CPS-img{
+        border-radius: 8px;
+        width: 360px;
+
+    }
+
+    .content__read-more-btn{
+        font-size: 16px;
+        margin-left: 3%;
+    }
+
+}
+
+@media (min-width: 1120px) {
+
+     .header{
+        display: flex;
+        background-color:#F8F8F8;
+        justify-content:flex-end;    
+        position: fixed;
+        right:0px;
+        z-index: 2;
+        height: auto;
+        padding-top: 30px;
+    
+
+
+    }
+    .header__burger-menu{
+        display: none;
+    
+    }
+
+    .header__contacts{
+        display: none;
+        
+    }
+    .header__order{
+        display: block;
+    }
+    
+    .order__checkstatus-btn{
+        background-position: right;
+        padding-right: 50px;
+        margin-right: 32px;
+        font-size: 16px;
+        font-family: "TT Lakes Medium", "Arial", sans-serif;
+       
+    }
+
+    .order__repair-btn{
+        background-position: right;
+        padding-right: 50px;
+        margin-right: 12px;
+        font-size: 16px;
+        text-align: left;
+        font-family: "TT Lakes Medium", "Arial", sans-serif;
+       
+    }
+
+    .header__logo{
+        display: none;
+    }
+
+    .header__left-col{
+        display: none;
+
+    }
+
+    .header__divider{
+        display: none;
+    }
+    
+
+
+    main{
+        padding-top: 42px;
+        background-color:#F8F8F8;
+        padding-bottom: 100%;
+        position: fixed;
+
+    }
+
+    .menu-services{
+        flex-wrap: wrap;
+
+    }
+
+    .main__title{
+        padding-left: 30px;
+        margin-bottom: 9px;
+    }
+
+    .main__menu-services{
+        margin-left: 32px;
+        width: auto;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+    }
+
+
+    .content{
+       /* justify-content: space-between;*/
+        margin-left: 34px;
+        gap: 36px;
+        
+    }
+
+    .content__text{
+        font-size: 14px;
+        line-height: 20px;
+        max-width:45% ;
+        
+    }
+
+    .content__CPS-img{
+        border-radius: 8px;
+        width: 49%;
+
+    }
+
+    .content__p--hidden{
+        margin-block-end:0;
+    }
+
+    .content__read-more-btn{
+        font-size: 16px;
+        margin-left: 1%;
+        
+    }
+}
