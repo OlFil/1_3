@@ -7,72 +7,78 @@
     <link rel="stylesheet" href="css\style.css">
     <title>CPS</title>
 </head>
-<header class="header">
-    <div class="header__left-col">
-        <button class="header__burger-menu burger-menu"></button>
-        <div class="header__divider divider"></div>
-        <div class="header__logo logo"><a href="#"><img alt="logo" src="svg/logo.svg"></a></div>
-    </div>
-    <div class="header__buttons">
-        <div class="header__contacts contacts">
-            <button class="contacts__phone-btn"></button>
-            <button class="contacts__chat-btn"></button>
-            <button class="contacts__profile-btn"></button>
-        </div>
-
-        <div class="header__order order">
-            <button class="order__repair-btn">Оставить заявку</button>
-            <button class="order__checkstatus-btn">Статус ремонта</button>
-        </div>
-    </div>
-
-</header>
-<main class="main">
-    <h1 class="title main__title">Услуги и сервисы</h1>
-    <menu class="menu-services main__menu-services">
-        <li class="menu-services__item">
-            <a href=# class="menu-services__link">Ремонтируемые бренды</a>
-        </li>
-        <li class="menu-services__item">
-            <a href=# class="menu-services__link">Ремонтируемые устройства</a>
-        </li>
-        <li class="menu-services__item">
-            <a href=# class="menu-services__link">Цены на услуги</a>
-        </li>
-        <li class="menu-services__item">
-            <a href=# class="menu-services__link">Адреса сервисных центров</a>
-        </li>
-        <li class="menu-services__item">
-            <a href=# class="menu-services__link">Специальные цены</a>
-        </li>
-        <li class="menu-services__item">
-            <a href=# class="menu-services__link">Отзывы</a>
-        </li>
-    </menu>
-    <article class="content">
-        <div class="content__text text">
-            <p class="content__p">
-                Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете
-                отремонтировать свой
-                ноутбук Dell с официальной гарантией производителя.
-            </p>
-            <p class="content__p content__p--hidden ">
-                Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое
-                количество постоянных
-                клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным
-                и близким.
-            </p>
-            <button class="content__read-more-btn read-more-btn">
-                Читать далее
-            </button>
-        </div>
-        <img src="img\CPS.png" alt="CPS" class="content__CPS-img">
-    </article>
-
-</main>
 
 <body>
+    <header class="header">
+        <div class="header__menu">
+            <button class="header__burger-menu burger-menu"></button>
+            <img alt="logo" src="../assets/svg/logo.svg" class="header__logo"></a>
+        </div>
+        <ul class="header__buttons buttons">
+            <li class="buttons__phone-btn"><button></button></li>
+            <li class="buttons__chat-btn"><button></button></li>
+            <li class="buttons__profile-btn"><button></button></li>
+            <li class="buttons__repair-btn"><button></button></li>
+            <li class="buttons__checkstatus-btn"><button></button></li>
+        </ul>
+    </header>
 
+    <main class="page">
+        <div class="main-page">
+            <h1 class="title page__title">Услуги и сервисы</h1>
+            <ul class="page__buttons ">
+                <li><button class="page__repair-btn">Оставить заявку </button></li>
+                <li><button class="page__checkstatus-btn">Статус ремонта</button></li>
+            </ul>
+        </div>
+        <menu class="menu-services page__menu-services">
+            <li class="menu-services__item">
+                <a href=# class="menu-services__link">Ремонтируемые бренды</a>
+            </li>
+            <li class="menu-services__item">
+                <a href=# class="menu-services__link">Ремонтируемые устройства</a>
+            </li>
+            <li class="menu-services__item">
+                <a href=# class="menu-services__link">Цены на услуги</a>
+            </li>
+            <li class="menu-services__item">
+                <a href=# class="menu-services__link">Адреса сервисных центров</a>
+            </li>
+            <li class="menu-services__item">
+                <a href=# class="menu-services__link">Специальные цены</a>
+            </li>
+            <li class="menu-services__item">
+                <a href=# class="menu-services__link">Отзывы</a>
+            </li>
+        </menu>
+        <article class="content">
+            <div class="content__text text">
+                <p class="content__text--visible">
+                    Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете
+                    отремонтировать свой
+                    ноутбук Dell с официальной гарантией производителя.
+                </p>
+                <p class="content__text--invisible">
+                    Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает
+                    большое
+                    количество постоянных
+                    клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас
+                    родным
+                    и близким.
+                </p>
+                <button class="content__read-more-btn read-more-btn">
+                    <svg width="8" height="11" viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="read-more-btn__icon">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M6.50008 0.500076L4.00008 3.00008L1.50008 0.500076C1.22393 0.223933 0.776218 0.223933 0.500076 0.500076C0.223933 0.776218 0.223933 1.22393 0.500075 1.50008L3.29297 4.29297C3.68349 4.68349 4.31666 4.68349 4.70718 4.29297L7.50008 1.50008C7.77622 1.22393 7.77622 0.776218 7.50008 0.500076C7.22393 0.223933 6.77622 0.223933 6.50008 0.500076ZM6.50008 6.50008L4.00008 9.00008L1.50008 6.50008C1.22393 6.22393 0.776218 6.22393 0.500076 6.50008C0.223933 6.77622 0.223933 7.22393 0.500075 7.50008L3.29297 10.293C3.68349 10.6835 4.31666 10.6835 4.70718 10.293L7.50008 7.50008C7.77622 7.22393 7.77622 6.77622 7.50008 6.50008C7.22393 6.22393 6.77622 6.22393 6.50008 6.50008Z"
+                            fill="#41F6D7" />
+                    </svg>
+                    Читать далее
+                </button>
+            </div>
+            <img src="../assets/img/CPS.png" alt="CPS" class="content__CPS-img">
+        </article>
+    </main>
 </body>
 
 </html>
