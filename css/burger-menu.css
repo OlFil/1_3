@@ -1,27 +1,27 @@
 @font-face {
     font-family: 'TT Lakes Regular';
-    src: url('/assets/fonts/TTLakes-Regular.eot');
-    src: url('/assets/fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
-    url('/assets/fonts/TTLakes-Regular.woff') format('woff'),
-    url('/assets/fonts/TTLakes-Regular.ttf') format('truetype');
+    src: url('../assets/fonts/TTLakes-Regular.eot');
+    src: url('../assets/fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/TTLakes-Regular.woff') format('woff'),
+    url('../assets/fonts/TTLakes-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'TT Lakes Medium';
-    src: url('/assets/fonts/TTLakes-Medium.eot');
-    src: url('/assets/fonts/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
-    url('/assets/fonts/TTLakes-Medium.woff') format('woff'),
-    url('/assets/fonts/TTLakes-Medium.ttf') format('truetype');
+    src: url('../assets/fonts/TTLakes-Medium.eot');
+    src: url('../assets/fonts/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/TTLakes-Medium.woff') format('woff'),
+    url('../assets/fonts/TTLakes-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
 @font-face {
     font-family: 'TT Lakes Bold';
-    src: url('/assets/fonts/TTLakes-Bold.eot');
-    src: url('/assets/fonts/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
-    url('/assets/fonts/TTLakes-Bold.woff') format('woff'),
-    url('/assets/fonts/TTLakes-Bold.ttf') format('truetype');
+    src: url('../assets/fonts/TTLakes-Bold.eot');
+    src: url('../assets/fonts/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/TTLakes-Bold.woff') format('woff'),
+    url('../assets/fonts/TTLakes-Bold.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
@@ -72,26 +72,26 @@ ul{
     margin: 0;
 }
 .header__exit{
-     background-image: url("/assets/svg/exit.svg");
+     background-image: url("../assets/svg/exit.svg");
      margin-right: 16px;
 }
 
 .header__find{
-     background-image: url("/assets/svg/search.svg");
+     background-image: url("../assets/svg/search.svg");
      margin-left: auto;
 }
 
 
 .contacts__phone-btn{
-    background-image: url("/assets/svg/call.svg");
+    background-image: url("../assets/svg/call.svg");
 }
 
 .contacts__chat-btn{
-    background-image: url("/assets/svg/chat.svg");
+    background-image: url("../assets/svg/chat.svg");
 }
 
 .contacts__profile-btn{
-    background-image: url("/assets/svg/profile.svg");
+    background-image: url("../assets/svg/profile.svg");
 }
 .contacts{
     display: flex;
