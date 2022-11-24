@@ -33,32 +33,49 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+body{
+    margin: 0;
+    padding: 0;
+}
 
 .menu{
     width:320px;
-    min-height: 100vh;
     box-shadow: 5px -5px 15px -5px rgba(14, 24, 80, 0.2);
     left:0;
-    padding: 24px;
-    margin: 0;
     font-family: 'TT Lakes Medium';
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.2px;
+}
+.container{
+    width: 90%;
+    min-height: 100vh;
+    margin: 0 auto;
     display:flex;
     gap:57px;
     flex-direction: column;
+   justify-content: space-around;
+    
 }
 
 .header{
     display: flex;
     align-items:center;
+    margin-top: 23px;
+    
 }
-.footer{
-    margin-top: auto;
+.menu__list{
+    margin-bottom: auto;
 }
 
-button {
+.footer{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+    gap:12px;
+}
+
+.button {
     border: 0;
     background-color: transparent;
     background-position: center;
@@ -66,7 +83,7 @@ button {
     padding: 20px;
 }
 
-ul{
+ul, nav{
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -80,7 +97,6 @@ ul{
      background-image: url("../assets/svg/search.svg");
      margin-left: auto;
 }
-
 
 .contacts__phone-btn{
     background-image: url("../assets/svg/call.svg");
@@ -101,12 +117,22 @@ ul{
 .language{
     display: flex;
     gap: 7px;
+  margin-top: 40px;
+
+}
+.language__item{
+    display: none;
+
+}
+.footer__email{
+    display: block;
 }
 .footer__number{
+    display: block;
     font-family: 'TT Lakes Bold';
     font-size: 24px;
 }
-.content{
+.list{
     display: flex;
     gap: 32px;
     flex-direction: column;
@@ -114,18 +140,18 @@ ul{
 .link{
      text-decoration: none;
      color:black;
-     padding: 16px;
-     padding-left: 0;
-     padding-right: 0;
+     display: inline-block;
+    width: 100%;
+    height: 100%;
 }
 
-.link:active, .link:hover{
+.language__item:checked + .language__label {
     color: #7E7E82;
 }
 
-.content__link::before, .content__link::before{
+.list__link::before, .list__link::before{
         content:"";
-        width: 6px;
+        width: 4px;
         height: 32px;
         background: #41F6D7;
         border-radius: 6px;
@@ -133,7 +159,7 @@ ul{
         left:0;
         opacity:0;
     }
-.content__link:active::before, .content__link:hover::before{
+.list__link:active::before, .list__link:hover::before{
     opacity: 1;
     transition: opacity 1s ease-out;
 }
