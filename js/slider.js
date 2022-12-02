@@ -14,13 +14,13 @@ function ready() {
         if (slider__toggle) {
             slider__list.style.height = 'auto';
             slider__toggleButton.innerHTML = 'Скрыть';
-            img.src = "..1_3/assets/svg/icon.svg";
+            img.src = "../assets/svg/icon.svg";
             slider__toggleButton.prepend(img)
         } else {
             slider__list.style.height = '160px';
             slider__list.style.overflow = 'hidden';
             slider__toggleButton.innerHTML = 'Показать все';
-            img.src = "..1_3/assets/svg/more.svg";
+            img.src = "../assets/svg/more.svg";
             slider__toggleButton.prepend(img)
         }
 
