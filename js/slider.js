@@ -1,31 +1,22 @@
-function ready() {
-    let slider__toggle = true;
-    let slider__toggleButton = document.querySelector('.slider__read-more-btn');
-    let slider__list = document.querySelector('.slider__brands');
-    slider__list.style.height = '160px';
-    slider__list.style.overflow = 'hidden';
-
-    let img = document.createElement("img");
-    img.classList.add('read-more-btn__icon');
+function initializeApp() {
+    let sliderToggleButton = document.querySelector('.slider__read-more-btn');
+    let sliderToggleButtonText=sliderToggleButton.querySelector('.read-more-btn__text');
+    let sliderToggleButtonImg=sliderToggleButton.querySelector('.read-more-btn__icon');
+    let sliderList = document.querySelector('.slider__brands');
 
 
-    slider__toggleButton.addEventListener("click", () => {
+    sliderToggleButton.addEventListener("click", () => {
+        
+        sliderToggleButtonImg.classList.toggle('read-more-btn__icon--rotate');
+        sliderList.classList.toggle('slider__brands--hidden');
 
-        if (slider__toggle) {
-            slider__list.style.height = 'auto';
-            slider__toggleButton.innerHTML = 'Скрыть';
-            img.src = "../assets/svg/icon.svg";
-            slider__toggleButton.prepend(img)
+        if (sliderToggleButtonImg.classList.contains('read-more-btn__icon--rotate')) {
+            sliderToggleButtonText.textContent = 'Скрыть';
+
         } else {
-            slider__list.style.height = '160px';
-            slider__list.style.overflow = 'hidden';
-            slider__toggleButton.innerHTML = 'Показать все';
-            img.src = "../assets/svg/more.svg";
-            slider__toggleButton.prepend(img)
+            sliderToggleButtonText.textContent = 'Показать все';
         }
-
-        slider__toggle = !slider__toggle;
     });
 }
 
-document.addEventListener("DOMContentLoaded", ready);
+document.addEventListener("DOMContentLoaded", initializeApp);
